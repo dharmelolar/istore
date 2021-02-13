@@ -253,6 +253,7 @@ footer{
         flex-direction: column;
         justify-items: center;
         align-items: center;
+        margin: 1rem 0;
     }
     .image{
         width: 60%;
