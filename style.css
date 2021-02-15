@@ -220,9 +220,50 @@ footer{
 .image{
     width: 100%;
 }
-
+@media screen and (max-width:1024px){
+    header .first-ul{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .specification{
+        display: grid;
+        grid-template: repeat(2,1fr)/repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    .spec{
+        margin: 1rem 0;
+    }
+    .image{
+        width: 60%;
+    }
+    .first-main-body{
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     align-items: center;
+    }
+    .second-main-body{
+        justify-content: center;
+    }
+    .select-div{
+        justify-items: center;
+    }
+   .small-img{
+       display: grid;
+       grid-template: 1fr/repeat(3,1fr);
+       row-gap: 10px;
+       column-gap: 10px;
+       justify-items: center;
+   }
+}
 @media screen and (max-width:414px){
-    header{
+    header .first-ul{
         display: none;
     }
     footer{
